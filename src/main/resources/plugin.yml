@@ -1,0 +1,10 @@
+name: NMS
+version: '${project.version}'
+main: net.david85258.nms.NMS
+api-version: 1.19
+authors: [ david85258 ]
+description: Un plugin para aprender NMS
+
+commands:
+  spawncustomentity:
+    description: Spawn a custom entity.
