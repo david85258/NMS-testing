@@ -1,6 +1,7 @@
 package net.david85258.nms.commands;
 
 import net.david85258.nms.customMobs.CustomMob;
+import net.david85258.nms.customMobs.PigCustom;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
@@ -13,6 +14,7 @@ public class SpawnCustomEntity implements TabExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player p) {
             new CustomMob(p.getLocation());
+            new PigCustom(p.getLocation());
         }
         return false;
     }
